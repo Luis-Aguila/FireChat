@@ -1,3 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p align="center"><img src="" alt="Logo/Imagen Proyecto" width="150px" height="150px"></p>
+	<h1 align="center">FireChat</h1>
+	<h3>Introducción</h3>
+  <p>FireChat, es un sistema de mensajeria en donde 2 personas previamente logeadas pueden interactuar o comunicarse a travez de mensajes.</p>
+  <p>Para este sistema se utilizo el motor de base de datos que ofrece Firebase en su dirección web https://firebase.google.com/?hl=es-419, tanto en el sistema de autentificación, como para guardar la data de los mensajes enviados.</p>
+  <p>Primero que todo, hay que autentificarse en la aplicación, esta autentificación puede ser mediante twitter o mediante una cuenta de google, una vez se a atutentificado, la base de datos de firebase registrara su inicio de sesión y se podra acceder al sistema de chat.</p>
+  <p>Para el desarrollo de este sistema, se necesito instalar y exportar las directivas de firebase en consola y en app.module.ts, posteriormente se pocedio a crear los diferentes tipo de componentes (login, interface y chat), para el gusrdado de los mensajes y la autentificación se creo un servicio de nombre chat.service.ts, el cual es el encargado de generar la autentificación por parte de los usuarios y a su vez de guardar los mensajes en la base de datos de firebase.</p>
+  <h3>Información del Proyecto</h3>
+  <p>Proyecto desarrollado a modo de aprendizaje en cursos guiados.</p>
+	<h3>Objetivo</h3>
+  <ul>
+    <li>Trabajar con sistema de Autentificación y guardado de datos en FireBase</li>
+  </ul>
+	<h3>Tecnologías</h3>
+  <ul>
+    <li>Angular 2+</li>
+    <li>Firebase Auth</li>
+    <li>FireBase Database</li>
+    <li>Bootstrap</li>
+  </ul>
+	<h3>Componentes</h3>
+  <ul>
+    <li>Chat</li>
+    <li>Login</li>
+    <li>Interface</li>
+  </ul>
+	<h3>Servicios</h3>
+  <ul>
+    <li>Chat.services.ts</li>
+  </ul>
+  <p>Se utilizo para la autentificación y el guardado de los mensajes, FireBase.</p>
+	<h3>Vistas del sistema</h3>
+	<p>Imagenes</p>
+
+	
+
+
+
+
+</body>
+</html>
+
 # Firechat
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
