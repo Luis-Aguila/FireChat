@@ -4,8 +4,26 @@
 	<meta charset="UTF-8">
 </head>
 <body>
-	<p align="center"><img src="" alt="Logo/Imagen Proyecto" width="150px" height="150px"></p>
+	<p align="center"><img src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/angular.png" alt="Logo/Imagen Proyecto" width="150px" height="150px"></p>
 	<h1 align="center">FireChat</h1>
+  <table>
+    <tbody>
+      <tr>
+        <td align="center" valign="middle">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/angular.png" alt="Imagen 1">
+        </td>
+        <td align="center" valign="middle">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/html5.png" alt="Imagen 2">
+        </td>
+        <td align="center" valign="middle">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/bootstrap.png" alt="Imagen 3">
+        </td>
+        <td align="center" valign="middle">
+          <img width="222px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-tecnology/Firebase.png" alt="Imagen 4">
+        </td>
+      </tr><tr></tr>
+    </tbody>
+  </table>
 	<h3>Introducción</h3>
   <p>FireChat, es un sistema de mensajeria en donde 2 personas previamente logeadas pueden interactuar o comunicarse a travez de mensajes.</p>
   <p>Para este sistema se utilizo el motor de base de datos que ofrece Firebase en su dirección web https://firebase.google.com/?hl=es-419, tanto en el sistema de autentificación, como para guardar la data de los mensajes enviados.</p>
@@ -36,13 +54,15 @@
   </ul>
   <p>Se utilizo para la autentificación y el guardado de los mensajes, FireBase.</p>
 	<h3>Vistas del sistema</h3>
-	<p>Imagenes</p>
-
-	
-
-
-
-
+  <table>
+    <tbody>
+      <tr>
+        <td align="center" valign="middle">
+          <img width="300px" src="https://github.com/Luis-Aguila/Contenido/blob/master/assets/img-proyect/FireChat/index.PNG" alt="Imagen 1">
+        </td>
+      </tr><tr></tr>
+    </tbody>
+  </table>
 </body>
 </html>
 
