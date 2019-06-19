@@ -8,7 +8,7 @@ import { ChatService } from "./services/chat.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+//inicializa el servicio de chat en el constructor
   constructor(public _cs:ChatService) {
 
   }

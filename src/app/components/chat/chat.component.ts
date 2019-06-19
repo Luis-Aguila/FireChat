@@ -10,7 +10,7 @@ export class ChatComponent implements OnInit{
 
   mensaje: string = "";
   elemento: any;
-
+//Inicializa el servicio y cargan los mensajes a la pantalla
   constructor(public _cs:ChatService) {
 
     this._cs.cargarMensajes()
@@ -22,12 +22,13 @@ export class ChatComponent implements OnInit{
 
             });
   }
+  //Carga el documento de mensajes al iniciar la app
   ngOnInit(){
     this.elemento = document.getElementById('app-mensajes');
 
   }
 
-
+//Envia los mensajes...lo muestra por consola y los agrega a la base de datos
   enviar_mensaje(){
     console.log(this.mensaje);
     if (this.mensaje.length===0) {

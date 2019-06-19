@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
-
+//Se importa la interface de mensaje
 import { Mensaje } from "../interface/mensaje.interface";
 
 
@@ -16,12 +16,12 @@ import 'rxjs/add/operator/catch';
   providedIn: 'root'
 })
 export class ChatService {
-
+//Se crea una variable que guarda los mensajes desde firebase
   private itemsCollection: AngularFirestoreCollection<Mensaje>;
-
+//Se crean las variables chat de tipo mensaje en forma de array y usuario de tipo any
   public chats:Mensaje[]=[];
   public usuario: any = {};
-
+//se cargan los servicios de firebase
   constructor(private afs: AngularFirestore,
               public afAuth: AngularFireAuth) {
 
@@ -36,16 +36,17 @@ export class ChatService {
       this.usuario.uid = user.uid;
     })
   }
-
+//Inicia sesión
   login(proveedor:string) {
     this.afAuth.auth.signInWithPopup(new auth.GoogleAuthProvider());
   }
+  //Finaliza la sesión del usuario
   logout() {
     this.usuario = {};
     this.afAuth.auth.signOut();
   }
 
-
+//Carga lso mensajes desde Firebase y los retorna
   cargarMensajes(){
     this.itemsCollection = this.afs.collection<Mensaje>('chats', ref=>ref.orderBy('fecha','desc')
                                                                         .limit(5));
@@ -62,7 +63,7 @@ export class ChatService {
                               })
   }
 
-
+//Agrega mensaje y lo agrega a la base de dato
   agregarMensaje(texto:string){
     let mensaje: Mensaje={
       nombre: 'LuisDemo',

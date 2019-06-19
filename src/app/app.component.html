@@ -1,13 +1,14 @@
 <div class="container main-container">
-  <h1>Firechat</h1>
+    <h1>Firechat</h1>
+    <!--Si el usuario se autentifica-->
+    <div class="col-md-12 text-right" *ngIf="_cs.usuario.uid">
+        <button (click)="_cs.logout()" type="button" class="btn btn-outline-danger">Salir</button>
 
-  <div class="col-md-12 text-right" *ngIf="_cs.usuario.uid">
-    <button (click)="_cs.logout()" type="button" class="btn btn-outline-danger">Salir</button>
+    </div>
+    <!--Si el usuario no se autentifica-->
+    <app-login *ngIf="!_cs.usuario.uid"></app-login>
 
-  </div>
-  <app-login *ngIf="!_cs.usuario.uid"></app-login>
-
-<!--
+    <!--
   <div class="chat-window">
     <app-chat></app-chat>
   </div>
